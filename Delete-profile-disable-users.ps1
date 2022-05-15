@@ -20,7 +20,7 @@ $NumDisableUser = $ArrayDisableUser.Count
         Write-Host -ForegroundColor Green "$($i): $(($ArrayDisableUser[$i].localpath).replace('C:\Users\',''))"
             }
 
-    $UserChoice = Read-Host "Vvedy nomer akkaunta / a - delete all / q - quit"
+    $UserChoice = Read-Host "Enter account number / a - delete all / q - quit"
     if ($UserChoice -eq 'q'){
         Write-Host -ForegroundColor Red "Vyhod"
         break
